@@ -992,3 +992,35 @@ section {
         justify-content: center;
     }
 }
+/* --- MOBILE MENU & LAYOUT FIXES --- */
+
+@media (max-width: 768px) {
+    /* 1. Make the menu slide in */
+    .nav-menu.active {
+        left: 0 !important; /* Forces the menu to appear */
+    }
+
+    /* 2. Hide the Scroll Indicator on mobile to prevent overlap */
+    .scroll-indicator {
+        display: none !important;
+    }
+    
+    /* 3. Ensure the Hero section has space */
+    .hero {
+        padding-bottom: 2rem;
+        min-height: auto; /* Allow height to grow with content */
+    }
+    
+    /* 4. Fix Hero Content stacking */
+    .hero-content {
+        display: flex;
+        flex-direction: column;
+        gap: 2rem;
+    }
+    
+    /* 5. Ensure the Profile Pic is visible */
+    .hero-visual {
+        order: -1; /* Moves image to top */
+        margin-bottom: 1rem;
+    }
+}
