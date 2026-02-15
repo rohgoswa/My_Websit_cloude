@@ -71,7 +71,33 @@
     <section style="padding: 4rem 0;">
         <div class="container">
             <div class="projects-grid" style="display: grid; grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); gap: 2rem;">
-                
+                <div class="project-card" style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; grid-column: 1 / -1;"> <div style="display: flex; flex-direction: column; gap: 1.5rem;">
+        <div style="width: 100%; height: 300px; overflow: hidden; border-radius: 12px; border: 1px solid var(--border-color);">
+            <img src="assets/vantage-dashboard.png" alt="Vantage Dashboard" style="width: 100%; height: 100%; object-fit: cover;">
+        </div>
+        
+        <div>
+            <div style="margin-bottom: 1rem;">
+                <h3 style="margin-bottom: 0.5rem; font-size: 1.75rem;">VANTAGE: Strategic Intelligence Agent</h3>
+                <p class="section-label" style="margin-bottom: 1rem;">RAG + Multi-Agent Automation</p>
+            </div>
+            <p style="color: var(--text-secondary); margin-bottom: 1.5rem;">
+                A production-grade Strategic AI Agent (v6.0) that acts as a Principal Analyst. It employs a "Hunter" agent to plan research vectors and a "Vault" RAG engine to hybridize internal private documents with live market data. The result is not a chat response, but a downloadable, citation-backed Investment Memo PDF.
+            </p>
+            <div class="project-meta" style="margin-bottom: 1.5rem;">
+                <span class="tag">Llama 3.3</span>
+                <span class="tag">LangChain</span>
+                <span class="tag">Tavily Search</span>
+                <span class="tag">PyPDF</span>
+                <span class="tag">Streamlit</span>
+            </div>
+            <div style="display: flex; gap: 1rem;">
+                <a href="https://huggingface.co/spaces/rohgoswa/rohits-vantage" target="_blank" class="btn btn-primary" style="font-size: 0.875rem; padding: 0.625rem 1.25rem;">Live Demo</a>
+                <a href="assets/vantage-report.pdf" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.625rem 1.25rem;">📄 Read Sample Memo</a>
+            </div>
+        </div>
+    </div>
+</div>
                 <div class="project-card" style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem; transition: all 0.3s ease;">
                     <div style="margin-bottom: 1rem;">
                         <h3 style="margin-bottom: 0.5rem;">The Council Agent</h3>
@@ -93,6 +119,7 @@
                         <a href="https://huggingface.co/spaces/rohgoswa/the-council-agent/tree/main" target="_blank" class="btn btn-secondary" style="font-size: 0.875rem; padding: 0.625rem 1.25rem;">View Code</a>
                     </div>
                 </div>
+                
 
                 <div class="project-card" style="background: var(--bg-secondary); border: 1px solid var(--border-color); border-radius: 16px; padding: 2rem;">
                     <div style="margin-bottom: 1rem;">
